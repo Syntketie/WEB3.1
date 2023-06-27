@@ -1,0 +1,14 @@
+const adjectives = ['Digital', 'Crypto', 'Decentralized', 'Virtual', 'Smart'];
+const nouns = ['Art', 'Collectible', 'Token', 'Asset', 'Reality'];
+
+// Генерация случайного названия NFT
+function generateNFTName() {
+  const adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+  const noun = nouns[Math.floor(Math.random() * nouns.length)];
+  const randomNumber = Math.floor(Math.random() * 1000);
+  return `${adjective} ${noun} #${randomNumber}`;
+}
+
+// Пример использования
+const randomNFTName = generateNFTName();
+console.log(randomNFTName);
